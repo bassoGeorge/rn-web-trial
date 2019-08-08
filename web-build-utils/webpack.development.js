@@ -6,15 +6,9 @@ module.exports = env => ({
 		stats             : "errors-only",
 		host              : process.env.HOST, // Defaults to `localhost`
 		port              : process.env.PORT, // Defaults to 8080
-		open              : false,
+		open              : true,
 		overlay           : true,
-		historyApiFallback: true,
-		proxy             : {
-			'/api': {
-				target     : env.e2e ? 'http://cl-api:8080/api' : 'http://localhost:3000',
-				pathRewrite: {'^/api': ''}
-			}
-		}
+		historyApiFallback: true
 	},
 	plugins  : [
 		//new WriteFilePlugin(),
