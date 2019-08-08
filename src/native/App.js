@@ -23,8 +23,11 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import {Provider} from 'react-redux';
+import {store} from '../shared/store';
+import {AppContainerGen} from '../shared/containersGens/app';
 
-const App = () => {
+const App = ({title, subTitle}) => {
   return (
     <Fragment>
       <StatusBar barStyle="dark-content" />
@@ -40,10 +43,9 @@ const App = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
+              <Text style={styles.sectionTitle}>{title}</Text>
               <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
+                {subTitle}
               </Text>
             </View>
             <View style={styles.sectionContainer}>
@@ -111,4 +113,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+const AppContainer = AppContainerGen(App);
+
+export default () => (
+  <Provider store={store}>
+    <AppContainer/>
+  </Provider>
+);
