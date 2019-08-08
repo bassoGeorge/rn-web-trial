@@ -1,0 +1,48 @@
+{
+  "name": "nativeWeb2",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "prod": "npm run webpack -- --env.mode production",
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server",
+    "dev": "PORT=5555 npm run webpack-dev-server -- --env.mode development --hot"
+  },
+  "dependencies": {
+    "react": "16.8.6",
+    "react-native": "0.60.4",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-loader": "8.0.4",
+    "babel-jest": "^24.8.0",
+    "html-loader": "0.5.5",
+    "eslint": "^6.1.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.55.0",
+    "react-test-renderer": "16.8.6",
+    "webpack": "4.36.1",
+    "webpack-bundle-analyzer": "3.3.2",
+    "webpack-cli": "3.1.2",
+    "webpack-dashboard": "2.0.0",
+    "webpack-dev-server": "3.3.1",
+    "webpack-merge": "4.1.4",
+    "html-webpack-plugin": "3.2.0",
+    "clean-webpack-plugin": "2.0.1",
+    "compression": "1.7.4",
+    "compression-webpack-plugin": "3.0.0",
+    "copy-webpack-plugin": "5.0.3",
+    "@babel/preset-env": "7.1.0",
+    "@babel/preset-react": "7.0.0",
+    "webpack-dev-server": "3.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
