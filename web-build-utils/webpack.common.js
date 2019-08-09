@@ -23,7 +23,7 @@ module.exports = ({mode}) => ({
 	},
 	plugins     : [
 		new CopyPlugin([
-			{from: '.src/web/public'},
+			{from: '.src/public'},
 		]),
 	],
 	optimization: {
