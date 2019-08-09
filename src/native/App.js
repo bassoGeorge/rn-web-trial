@@ -7,99 +7,83 @@
  */
 
 import React, {Fragment} from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  Button
-} from 'react-native';
+import {Button, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View} from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
 import {Provider} from 'react-redux';
 import {store} from '../shared/store';
-import {AppContainerGen} from '../shared/containersGens/app';
+import {AppWrapperContainer} from '../shared/components/app-wrapper';
 
 const App = ({title, subTitle, onClick}) => {
-  return (
-    <Fragment>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>{title}</Text>
-              <Text style={styles.sectionDescription}>
-                {subTitle}
-              </Text>
-              <Button onPress={() => onClick("native")} title="Shake Up"/>
-            </View>
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </Fragment>
-  );
+	return (
+		<Fragment>
+			<StatusBar barStyle="dark-content"/>
+			<SafeAreaView>
+				<ScrollView
+					contentInsetAdjustmentBehavior="automatic"
+					style={styles.scrollView}>
+					<Header/>
+					{global.HermesInternal == null ? null : (
+						<View style={styles.engine}>
+							<Text style={styles.footer}>Engine: Hermes</Text>
+						</View>
+					)}
+					<View style={styles.body}>
+						<View style={styles.sectionContainer}>
+							<Text style={styles.sectionTitle}>{title}</Text>
+							<Text style={styles.sectionDescription}>
+								{subTitle}
+							</Text>
+							<Button onPress={() => onClick('native')} title="Shake Up"/>
+						</View>
+					</View>
+				</ScrollView>
+			</SafeAreaView>
+		</Fragment>
+	);
 };
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
+	scrollView        : {
+		backgroundColor: Colors.lighter,
+	},
+	engine            : {
+		position: 'absolute',
+		right   : 0,
+	},
+	body              : {
+		backgroundColor: Colors.white,
+	},
+	sectionContainer  : {
+		marginTop        : 32,
+		paddingHorizontal: 24,
+	},
+	sectionTitle      : {
+		fontSize  : 24,
+		fontWeight: '600',
+		color     : Colors.black,
+	},
+	sectionDescription: {
+		marginTop : 8,
+		fontSize  : 18,
+		fontWeight: '400',
+		color     : Colors.dark,
+	},
+	highlight         : {
+		fontWeight: '700',
+	},
+	footer            : {
+		color       : Colors.dark,
+		fontSize    : 12,
+		fontWeight  : '600',
+		padding     : 4,
+		paddingRight: 12,
+		textAlign   : 'right',
+	},
 });
 
-const AppContainer = AppContainerGen(App);
-
 export default () => (
-  <Provider store={store}>
-    <AppContainer/>
-  </Provider>
+	<Provider store={store}>
+		<AppWrapperContainer render={data => <App {...data}/>}/>
+	</Provider>
 );
