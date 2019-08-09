@@ -14,6 +14,7 @@ import {
   View,
   Text,
   StatusBar,
+  Button
 } from 'react-native';
 
 import {
@@ -27,7 +28,7 @@ import {Provider} from 'react-redux';
 import {store} from '../shared/store';
 import {AppContainerGen} from '../shared/containersGens/app';
 
-const App = ({title, subTitle}) => {
+const App = ({title, subTitle, onClick}) => {
   return (
     <Fragment>
       <StatusBar barStyle="dark-content" />
@@ -47,26 +48,8 @@ const App = ({title, subTitle}) => {
               <Text style={styles.sectionDescription}>
                 {subTitle}
               </Text>
+              <Button onPress={() => onClick("native")} title="Shake Up"/>
             </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
           </View>
         </ScrollView>
       </SafeAreaView>

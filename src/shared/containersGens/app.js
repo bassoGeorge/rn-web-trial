@@ -5,6 +5,8 @@ export const mapStateToProps = state => ({
 	subTitle: state.subTitle
 });
 
-export const mapDispatchToProps = dispatch => ({});
+export const mapDispatchToProps = dispatch => ({
+	onClick: (str) => dispatch({ type: "TRIAL" , payload: str})
+});
 
 export const AppContainerGen = connect(mapStateToProps, mapDispatchToProps);

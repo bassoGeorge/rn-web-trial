@@ -9,6 +9,7 @@ export class App extends React.Component {
 			<div>
 				<h1>{this.props.title}</h1>
 				<p>{this.props.subTitle}</p>
+				<button onClick={() => this.props.onClick("web")}>Shake Up</button>
 			</div>
 		);
 	}
