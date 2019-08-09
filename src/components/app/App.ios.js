@@ -12,7 +12,7 @@ import {Button, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View} fro
 import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
 import {Provider} from 'react-redux';
 import {store} from '../../store';
-import {AppWrapperContainer} from '../app-wrapper';
+import {AppWrapperContainer} from './app-wrapper';
 
 const App = ({title, subTitle, onClick}) => {
 	return (

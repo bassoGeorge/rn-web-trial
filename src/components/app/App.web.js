@@ -1,7 +1,7 @@
 import React from 'react';
 import {Provider} from 'react-redux';
 import {store} from '../../store';
-import {AppWrapperContainer} from '../app-wrapper';
+import {AppWrapperContainer} from './app-wrapper';
 
 export class App extends React.Component {
 	render() {
