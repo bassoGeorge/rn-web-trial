@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {AppContainerGen} from '../../containersGens/app';
+import {AppContainerGen} from './app.container';
 
 export class AppWrapper extends React.Component {
 	constructor(props) {
