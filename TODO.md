@@ -9,4 +9,5 @@ Things to checkout
 - [ ] Linter? EsLint configuration and IDE integration
 - [ ] Babel config -- Currently react native given default
 - [ ] Flow?
-- [ ] Swift integration iOS
+- [x] Objective-C bridging to Swift in iOS and rewriting the AppDelegate to Swift
+- [x] Environment macros for Swift pre-comipiler in iOS
