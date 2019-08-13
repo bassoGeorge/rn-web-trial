@@ -2,7 +2,7 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import {store} from '../../store';
 import {AppWrapperContainer} from './app-wrapper';
-import {ENVIRONMENT} from '../../trial';
+import {API_URL, ENVIRONMENT} from '../../trial';
 
 export class App extends React.Component {
 	render() {
@@ -16,6 +16,9 @@ export class App extends React.Component {
 						<div>
 							<p>
 								Env description: {ENVIRONMENT}
+							</p>
+							<p>
+								API: {API_URL}
 							</p>
 						</div>
 					</div>
