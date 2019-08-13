@@ -14,6 +14,7 @@ import {Provider} from 'react-redux';
 import {store} from '../../store';
 import {AppWrapperContainer} from './app-wrapper';
 import {API_URL, ENVIRONMENT} from '../../trial';
+import {EnvConfig} from '../../env-config';
 
 const App = ({title, subTitle, onClick}) => {
 	return (
@@ -37,10 +38,10 @@ const App = ({title, subTitle, onClick}) => {
 							</Text>
 							<Button onPress={() => onClick('native')} title="Shake Up"/>
 							<Text>
-								Environment: {ENVIRONMENT}
+								Environment: {EnvConfig.getEnvironment()}
 							</Text>
 							<Text>
-								API_URL: {API_URL}
+								API_URL: {EnvConfig.getApiUrl()}
 							</Text>
 						</View>
 					</View>

@@ -2,7 +2,7 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import {store} from '../../store';
 import {AppWrapperContainer} from './app-wrapper';
-import {API_URL, ENVIRONMENT} from '../../trial';
+import {EnvConfig} from '../../env-config';
 
 export class App extends React.Component {
 	render() {
@@ -15,10 +15,10 @@ export class App extends React.Component {
 						<button onClick={() => onClick('web')}>Shake Up</button>
 						<div>
 							<p>
-								Env description: {ENVIRONMENT}
+								Env description: {EnvConfig.getEnvironment()}
 							</p>
 							<p>
-								API: {API_URL}
+								API: {EnvConfig.getApiUrl()}
 							</p>
 						</div>
 					</div>

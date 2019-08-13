@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"start": "npm run dev",
-		"ios": "react-native run-ios",
+		"ios": "ENVFILE='ios/env/local' react-native run-ios",
 		"test": "jest",
 		"lint": "eslint .",
 		"prod": "HOST=localhost npm run webpack -- --env.mode production",
