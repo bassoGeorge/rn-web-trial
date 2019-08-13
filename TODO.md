@@ -1,7 +1,7 @@
 # TODO
 Things to checkout
 
-- [ ] Env configuration for iOS so as to get API host
+- [x] Env configuration for iOS so as to get API host (Use react-native-dotenv, set the env file using pipeline, pass config to native components)
 - [x] Directory structure
 - [ ] Styles sharing? CSS-in-JS?
 - [ ] Unit testing strategy
@@ -11,3 +11,7 @@ Things to checkout
 - [ ] Flow?
 - [x] Objective-C bridging to Swift in iOS and rewriting the AppDelegate to Swift
 - [x] Environment macros for Swift pre-comipiler in iOS
+
+
+# NOTES
+- Remember to set Dead code stripping off in xcode. This intereferes with a Release build
