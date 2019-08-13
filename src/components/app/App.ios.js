@@ -13,6 +13,7 @@ import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
 import {Provider} from 'react-redux';
 import {store} from '../../store';
 import {AppWrapperContainer} from './app-wrapper';
+import {ENVIRONMENT} from '../../trial';
 
 const App = ({title, subTitle, onClick}) => {
 	return (
@@ -35,6 +36,9 @@ const App = ({title, subTitle, onClick}) => {
 								{subTitle}
 							</Text>
 							<Button onPress={() => onClick('native')} title="Shake Up"/>
+							<Text>
+								Environment: {ENVIRONMENT}
+							</Text>
 						</View>
 					</View>
 				</ScrollView>
