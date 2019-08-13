@@ -8,15 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* nativeWeb2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* nativeWeb2Tests.m */; };
-		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* nativeWeb2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* nativeWeb2Tests.m */; };
 		318C715ABB9B334B59FDCFC2 /* libPods-nativeWeb2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BDF3E501C1371E47B8AD0B7 /* libPods-nativeWeb2.a */; };
+		7FCE9EA723028F4D00B327B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCE9EA623028F4D00B327B4 /* AppDelegate.swift */; };
 		C88131EED89CBB148BE37E26 /* libPods-nativeWeb2-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24FC083A13D298A311048A58 /* libPods-nativeWeb2-tvOSTests.a */; };
 		CC9F31CD8C5B84A687BE764A /* libPods-nativeWeb2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3463FA72CE26DDA3436680C8 /* libPods-nativeWeb2Tests.a */; };
 		D47D30747E9219FAD83AA67B /* libPods-nativeWeb2-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C132647992B398FCEB6B27 /* libPods-nativeWeb2-tvOS.a */; };
@@ -46,12 +43,9 @@
 		00E356F21AD99517003FC87E /* nativeWeb2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nativeWeb2Tests.m; sourceTree = "<group>"; };
 		03C132647992B398FCEB6B27 /* libPods-nativeWeb2-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeWeb2-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* nativeWeb2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nativeWeb2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = nativeWeb2/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = nativeWeb2/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = nativeWeb2/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = nativeWeb2/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = nativeWeb2/main.m; sourceTree = "<group>"; };
 		24FC083A13D298A311048A58 /* libPods-nativeWeb2-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeWeb2-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* nativeWeb2-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nativeWeb2-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* nativeWeb2-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nativeWeb2-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +54,8 @@
 		4AFA34EEC4DC25093CBE013E /* Pods-nativeWeb2-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeWeb2-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-nativeWeb2-tvOSTests/Pods-nativeWeb2-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		71756A9ADB0169A72C3E70A7 /* Pods-nativeWeb2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeWeb2.debug.xcconfig"; path = "Target Support Files/Pods-nativeWeb2/Pods-nativeWeb2.debug.xcconfig"; sourceTree = "<group>"; };
 		7BDF3E501C1371E47B8AD0B7 /* libPods-nativeWeb2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeWeb2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FCE9EA523028F4C00B327B4 /* nativeWeb2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nativeWeb2-Bridging-Header.h"; sourceTree = "<group>"; };
+		7FCE9EA623028F4D00B327B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4DCDCBC041EAFE17C27E600 /* Pods-nativeWeb2-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeWeb2-tvOS.release.xcconfig"; path = "Target Support Files/Pods-nativeWeb2-tvOS/Pods-nativeWeb2-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		BC0085DC25FFBBE1687DBEC6 /* Pods-nativeWeb2-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeWeb2-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-nativeWeb2-tvOS/Pods-nativeWeb2-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DE4FBF669E15E0E04B300795 /* Pods-nativeWeb2-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeWeb2-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-nativeWeb2-tvOSTests/Pods-nativeWeb2-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,12 +122,11 @@
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
-				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
-				13B07FB71A68108700A75B9A /* main.m */,
+				7FCE9EA623028F4D00B327B4 /* AppDelegate.swift */,
+				7FCE9EA523028F4C00B327B4 /* nativeWeb2-Bridging-Header.h */,
 			);
 			name = nativeWeb2;
 			sourceTree = "<group>";
@@ -161,7 +156,6 @@
 				F0957CD4145808E677DDAF1F /* Pods-nativeWeb2Tests.debug.xcconfig */,
 				FBB33992DCAC8922D7474628 /* Pods-nativeWeb2Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -292,6 +286,9 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1030;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -308,6 +305,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -528,8 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				7FCE9EA723028F4D00B327B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,8 +534,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
-				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F0957CD4145808E677DDAF1F /* Pods-nativeWeb2Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -605,6 +601,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FBB33992DCAC8922D7474628 /* Pods-nativeWeb2Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = nativeWeb2Tests/Info.plist;
@@ -626,6 +623,7 @@
 			baseConfigurationReference = 71756A9ADB0169A72C3E70A7 /* Pods-nativeWeb2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = nativeWeb2/Info.plist;
@@ -637,6 +635,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = nativeWeb2;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "nativeWeb2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -646,6 +648,7 @@
 			baseConfigurationReference = 30177A2D122DA94C217BB095 /* Pods-nativeWeb2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = nativeWeb2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -656,6 +659,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = nativeWeb2;
+				SWIFT_OBJC_BRIDGING_HEADER = "nativeWeb2-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
