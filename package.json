@@ -3,14 +3,14 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"start": "npm run dev",
+		"start": "npm run web",
 		"ios": "react-native run-ios",
 		"test": "jest",
 		"lint": "eslint .",
-		"prod": "HOST=localhost npm run webpack -- --env.mode production",
-		"webpack": "webpack",
-		"webpack-dev-server": "webpack-dev-server",
-		"dev": "npm run webpack-dev-server -- --env.mode development --hot"
+		"build:prod": "HOST=localhost npm run webpack -- --env.mode production",
+		"webpack": "webpack --config web/webpack/webpack.config.js",
+		"webpack-dev-server": "webpack-dev-server --config web/webpack/webpack.config.js",
+		"web": "npm run webpack-dev-server -- --env.mode development --hot"
 	},
 	"dependencies": {
 		"react": "16.8.6",

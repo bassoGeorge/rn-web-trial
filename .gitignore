@@ -59,4 +59,4 @@ buck-out/
 /ios/Pods/
 
 # Web dist folder
-dist
+web/build
