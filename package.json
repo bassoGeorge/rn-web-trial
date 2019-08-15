@@ -7,7 +7,7 @@
 		"ios": "react-native run-ios",
 		"test": "jest",
 		"lint": "eslint .",
-		"build:prod": "HOST=localhost npm run webpack -- --env.mode production",
+		"build:web": "HOST=localhost npm run webpack -- --env.mode production",
 		"webpack": "webpack --config web/webpack/webpack.config.js",
 		"webpack-dev-server": "webpack-dev-server --config web/webpack/webpack.config.js",
 		"web": "npm run webpack-dev-server -- --env.mode development --hot"

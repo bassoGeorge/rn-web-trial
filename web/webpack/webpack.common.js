@@ -1,6 +1,8 @@
 const CopyPlugin = require('copy-webpack-plugin');
 const path       = require('path');
 
+
+const absProjectPath = process.cwd();
 module.exports = ({mode}) => ({
 	entry       : {
 		main: [
@@ -11,7 +13,7 @@ module.exports = ({mode}) => ({
 		// Since we have scss, it will be extracted into separate file and linked by miniCssExtractPlugin
 	},
 	output      : {
-		path      : path.resolve(process.cwd(), './web/build'),
+		path      : path.resolve(absProjectPath, './web/build'),
 		filename  : mode === 'production'
 			? '[name]-[chunkhash].js'
 			: '[name].js',
@@ -24,7 +26,7 @@ module.exports = ({mode}) => ({
 	},
 	plugins     : [
 		new CopyPlugin([
-			{from: '.src/public'},
+			{from: path.resolve(absProjectPath, './web/public')},
 		]),
 	],
 	optimization: {
