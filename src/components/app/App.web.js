@@ -3,6 +3,7 @@ import {Provider} from 'react-redux';
 import {store} from '../../store';
 import {AppWrapperContainer} from './app-wrapper';
 import {EnvConfig} from '../../env-config';
+import AphroTrial from '../aphro-trial/AphroTrial.web';
 
 export class App extends React.Component {
 	render() {
@@ -21,6 +22,7 @@ export class App extends React.Component {
 								API: {EnvConfig.getApiUrl()}
 							</p>
 						</div>
+						<AphroTrial/>
 					</div>
 				)
 			}
