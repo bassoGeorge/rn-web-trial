@@ -16,6 +16,7 @@ import {AppWrapperContainer} from './app-wrapper';
 import {API_URL, ENVIRONMENT} from '../../trial';
 import {EnvConfig} from '../../env-config';
 import AphroTrial from '../aphro-trial/AphroTrial.ios';
+import ScTrial from '../sc-trial/ScTrial.ios';
 
 const App = ({title, subTitle, onClick}) => {
 	return (
@@ -46,7 +47,7 @@ const App = ({title, subTitle, onClick}) => {
 							</Text>
 						</View>
 					</View>
-					<AphroTrial/>
+					<ScTrial/>
 				</ScrollView>
 			</SafeAreaView>
 		</Fragment>

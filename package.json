@@ -18,7 +18,8 @@
 		"react-dom": "16.8.6",
 		"react-native": "0.60.4",
 		"react-redux": "^7.1.0",
-		"redux": "^4.0.4"
+		"redux": "^4.0.4",
+		"styled-components": "^4.3.2"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.5.5",
@@ -28,6 +29,7 @@
 		"@react-native-community/eslint-config": "^0.0.5",
 		"babel-jest": "^24.8.0",
 		"babel-loader": "8.0.4",
+		"babel-plugin-styled-components": "^1.10.6",
 		"babel-plugin-transform-inline-environment-variables": "^0.4.3",
 		"clean-webpack-plugin": "2.0.1",
 		"compression": "1.7.4",
