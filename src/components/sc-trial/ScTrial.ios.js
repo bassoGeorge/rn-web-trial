@@ -1,12 +1,17 @@
 import React from 'react'
 import styled from 'styled-components/native'
-import {commonPara} from './common-styles';
+import {commonPara, commonSubtitle} from './common-styles';
+import {Text} from 'react-native'
 
 export default function ScTrial(props) {
 	return (
 		<Wrapper>
 			<Title>Trying out styled components</Title>
 			<Para>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae blanditiis, dicta dolore eligendi error eum fuga in ipsam magnam magni maxime nisi nulla ratione recusandae reiciendis reprehenderit sapiente tempora.</Para>
+			<Text css={commonSubtitle}>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, labore.
+				<Text style={{fontWeight: 'bold'}}>Bold</Text>
+			</Text>
 		</Wrapper>
 	)
 }

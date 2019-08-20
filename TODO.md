@@ -3,7 +3,7 @@ Things to checkout
 
 - [x] Env configuration for iOS so as to get API host (Use react-native-dotenv, set the env file using pipeline, pass config to native components)
 - [x] Directory structure
-- [ ] Styles sharing? CSS-in-JS?
+- [x] Styles sharing? CSS-in-JS?: styled-components
 - [ ] Unit testing strategy
 - [ ] E2E
 - [ ] Linter? EsLint configuration and IDE integration
