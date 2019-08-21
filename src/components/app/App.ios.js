@@ -7,52 +7,59 @@
  */
 
 import React, {Fragment} from 'react';
-import {Button, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View} from 'react-native';
+import {StatusBar, StyleSheet} from 'react-native';
+import {createAppContainer, createBottomTabNavigator, createStackNavigator} from 'react-navigation';
 
-import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {Provider} from 'react-redux';
 import {store} from '../../store';
 import {AppWrapperContainer} from './app-wrapper';
-import {API_URL, ENVIRONMENT} from '../../trial';
-import {EnvConfig} from '../../env-config';
-import AphroTrial from '../aphro-trial/AphroTrial.ios';
+import Home from '../home/Home.ios';
 import ScTrial from '../sc-trial/ScTrial.ios';
+import About from '../about/about.ios';
 
 const App = ({title, subTitle, onClick}) => {
 	return (
 		<Fragment>
 			<StatusBar barStyle="dark-content"/>
-			<SafeAreaView>
-				<ScrollView
-					contentInsetAdjustmentBehavior="automatic"
-					style={styles.scrollView}>
-					<Header/>
-					{global.HermesInternal == null ? null : (
-						<View style={styles.engine}>
-							<Text style={styles.footer}>Engine: Hermes</Text>
-						</View>
-					)}
-					<View style={styles.body}>
-						<View style={styles.sectionContainer}>
-							<Text style={styles.sectionTitle}>{title}</Text>
-							<Text style={styles.sectionDescription}>
-								{subTitle}
-							</Text>
-							<Button onPress={() => onClick('native')} title="Shake Up"/>
-							<Text>
-								Environment: {EnvConfig.getEnvironment()}
-							</Text>
-							<Text>
-								API_URL: {EnvConfig.getApiUrl()}
-							</Text>
-						</View>
-					</View>
-					<ScTrial/>
-				</ScrollView>
-			</SafeAreaView>
+			{/*<SafeAreaView>*/}
+			{/*	<ScrollView*/}
+			{/*		contentInsetAdjustmentBehavior="automatic"*/}
+			{/*		style={styles.scrollView}>*/}
+
+			<NavigationContainer/>
+			{/*	</ScrollView>*/}
+			{/*</SafeAreaView>*/}
 		</Fragment>
 	);
 };
+
+const HomeNavigationStack = createStackNavigator({
+	Home   : {
+		screen: Home,
+		path  : '',
+	},
+	Details: {
+		screen: ScTrial,
+		path  : '/details',
+	},
+}, {
+	initialRouteName: 'Home',
+});
+
+const AboutNavigationStack = createStackNavigator({
+	About: {
+		screen: About,
+		path  : '/about',
+	},
+});
+
+const AppNavigation = createBottomTabNavigator({
+	Home : HomeNavigationStack,
+	About: AboutNavigationStack,
+});
+
+const NavigationContainer = createAppContainer(AppNavigation);
 
 const styles = StyleSheet.create({
 	scrollView        : {
