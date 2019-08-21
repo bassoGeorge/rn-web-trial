@@ -13,6 +13,8 @@
 		"web": "npm run webpack-dev-server -- --env.mode development --hot"
 	},
 	"dependencies": {
+		"@react-navigation/core": "^3.4.2",
+		"@react-navigation/web": "^1.0.0-alpha.9",
 		"react": "16.8.6",
 		"react-dom": "16.8.6",
 		"react-native": "0.60.4",

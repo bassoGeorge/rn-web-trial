@@ -1,19 +1,23 @@
-import React from 'react'
-import styled from 'styled-components/native'
+import React from 'react';
+import styled from 'styled-components/native';
 import {commonPara, commonSubtitle} from './common-styles';
-import {Text} from 'react-native'
+import {Text} from 'react-native';
 
-export default function ScTrial(props) {
+export default function ScTrial({navigation}) {
 	return (
 		<Wrapper>
 			<Title>Trying out styled components</Title>
-			<Para>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae blanditiis, dicta dolore eligendi error eum fuga in ipsam magnam magni maxime nisi nulla ratione recusandae reiciendis reprehenderit sapiente tempora.</Para>
+			<Para>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae blanditiis, dicta dolore eligendi
+				error eum fuga in ipsam magnam magni maxime nisi nulla ratione recusandae reiciendis reprehenderit sapiente
+				tempora.</Para>
 			<Text css={commonSubtitle}>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, labore.
 				<Text style={{fontWeight: 'bold'}}>Bold</Text>
 			</Text>
+			<Text>We have name: {navigation.getParam('name')}</Text>
+			<Text>We have id: {navigation.getParam('id')}</Text>
 		</Wrapper>
-	)
+	);
 }
 
 const Title = styled.Text`
@@ -24,9 +28,9 @@ const Title = styled.Text`
 const Para = styled.Text`
 	color: #333;
 	${commonPara}
-`
+`;
 
 const Wrapper = styled.View`
 	background: #fff;
 	padding: 30px;
-`
+`;
