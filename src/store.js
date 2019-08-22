@@ -2,7 +2,7 @@ import {createStore} from 'redux';
 
 
 const baseState = {
-	title: "This is a successful app",
+	title: "Trial Combo App",
 	subTitle: "- powered by React + React Native"
 };
 
@@ -11,7 +11,7 @@ const reducer = (state, action) => {
 		case "TRIAL":
 			return {
 				...state,
-				subTitle: "You shook things up for " + action.payload
+				subTitle: "You tried a redux flow for " + action.payload
 			};
 
 		default: return state

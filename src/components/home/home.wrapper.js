@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
-import {AppContainerGen} from './app.container';
+import {HomeContainerGen} from './home.container';
 
-export class AppWrapper extends React.Component {
+export class HomeWrapperComponent extends React.Component {
 	constructor(props) {
 		super(props);
 
@@ -9,7 +9,7 @@ export class AppWrapper extends React.Component {
 	}
 
 	processAndHandleClick(str) {
-		this.props.onClick(str + " :: processed");
+		this.props.onClick(str + " - with additional processing");
 	}
 
 	render() {
@@ -24,4 +24,4 @@ export class AppWrapper extends React.Component {
 }
 
 
-export const AppWrapperContainer = AppContainerGen(AppWrapper);
+export const HomeWrapper = HomeContainerGen(HomeWrapperComponent);
