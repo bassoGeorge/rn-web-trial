@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {commonPara, commonSubtitle} from './common-styles';
 
-export default function ScTrial({navigation}) {
+export default function ScTrial({match, location, history}, context) {
+	const params = new URLSearchParams(location.search);
 	return (
 		<div>
 			<Title>Trying out styled components</Title>
@@ -12,9 +13,9 @@ export default function ScTrial({navigation}) {
 
 			<p css={commonSubtitle}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, ipsam.</p>
 
-			<p>We have name: {navigation.getParam('name')}</p>
-			<p>We have id: {navigation.getParam('id')}</p>
-			<button onClick={() => navigation.goBack()}>Go back</button>
+			<p>We have name: {params.get("name")}</p>
+			<p>We have id: {params.get("id")}</p>
+			<button onClick={history.goBack}>Go back</button>
 		</div>
 	);
 }
