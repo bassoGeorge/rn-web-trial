@@ -13,7 +13,7 @@ import {Provider} from 'react-redux';
 import {store} from '../../../../store';
 import Home from '../home/Home';
 import ScTrial from '../sc-trial/ScTrial';
-import About from '../about/about';
+import About from '../about/About.ios';
 
 const App = () => {
 	return (
