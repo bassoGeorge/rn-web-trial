@@ -1,11 +1,10 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import {Provider} from 'react-redux';
 import {store} from '../../store';
 import {AppWrapperContainer} from './app-wrapper';
-import {EnvConfig} from '../../env-config';
 import ScTrial from '../sc-trial/ScTrial.web';
 
-import {createSwitchNavigator, createNavigator, StackRouter, TabRouter, SceneView} from '@react-navigation/core';
+import {createNavigator, SceneView, StackRouter, TabRouter} from '@react-navigation/core';
 import {createBrowserApp, Link} from '@react-navigation/web';
 import Home from '../home/Home.web';
 import About from '../about/about.web';
@@ -30,15 +29,15 @@ export class App extends React.Component {
 class MainLayout extends React.Component {
 	render() {
 		const {descriptors, navigation} = this.props;
-		const activeKey                 = navigation.state.routes[navigation.state.index].key;
-		const descriptor                = descriptors[activeKey];
+		const activeRoute           = navigation.state.routes[navigation.state.index];
+		const descriptor                = descriptors[activeRoute.key];
 
 		return (
 			<div>
 				<header css={`background-color: #f8f8f8; color: black; width: 100%; padding: 20px; display: flex; justify-content: flex-start;`}>
 					<span>Trial react + react native</span>
-					<Link routeName="Home">Home</Link>
-					<Link routeName="About">About</Link>
+					<Link routeName="Home">Home {activeRoute.routeName === 'Home' ? "--active" : ''}</Link>
+					<Link routeName="About">About {activeRoute.routeName === 'About' ? "--active" : ''}</Link>
 				</header>
 				<div>
 					<SceneView
