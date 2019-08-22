@@ -35,6 +35,7 @@ class MainLayout extends React.Component {
 		return (
 			<div>
 				<header css={`background-color: #f8f8f8; color: black; width: 100%; padding: 20px; display: flex; justify-content: flex-start;`}>
+					<button onClick={() => navigation.goBack()}>Global Back button</button>
 					<span>Trial react + react native</span>
 					<Link routeName="Home">Home {activeRoute.routeName === 'Home' ? "--active" : ''}</Link>
 					<Link routeName="About">About {activeRoute.routeName === 'About' ? "--active" : ''}</Link>
