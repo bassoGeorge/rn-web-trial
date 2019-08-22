@@ -10,10 +10,10 @@ import React, {Fragment} from 'react';
 import {StatusBar} from 'react-native';
 import {createAppContainer, createBottomTabNavigator, createStackNavigator} from 'react-navigation';
 import {Provider} from 'react-redux';
-import {store} from '../../store';
-import Home from '../home/Home.ios';
-import ScTrial from '../sc-trial/ScTrial.ios';
-import About from '../about/about.ios';
+import {store} from '../../../../store';
+import Home from '../home/Home';
+import ScTrial from '../sc-trial/ScTrial';
+import About from '../about/about';
 
 const App = () => {
 	return (
