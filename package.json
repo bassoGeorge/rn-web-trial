@@ -11,12 +11,13 @@
 		"test:web": "npm run test:shared && npm run test:web-ui",
 		"test:ios-ui": "jest --config ./__tests__/config/ios-ui.unit.js",
 		"test:ios": "npm run test:shared && npm run test:ios-ui",
-		"test": "npm run test:shared && npm run test:web-ui && npm run test:ios-ui",
+		"test": "concurrently \"npm:test:shared\" \"npm:test:web-ui\" \"npm:test:ios-ui\"",
 		"build:web": "HOST=localhost npm run webpack -- --env.mode production",
 		"webpack": "webpack --config web/webpack/webpack.config.js",
 		"webpack-dev-server": "webpack-dev-server --config web/webpack/webpack.config.js"
 	},
 	"dependencies": {
+		"concurrently": "^4.1.2",
 		"react": "16.9.0",
 		"react-dom": "16.9.0",
 		"react-native": "0.60.4",
