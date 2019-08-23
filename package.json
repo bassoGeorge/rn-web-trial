@@ -40,6 +40,7 @@
 		"copy-webpack-plugin": "5.0.3",
 		"html-loader": "0.5.5",
 		"html-webpack-plugin": "3.2.0",
+		"husky": "^3.0.4",
 		"jest": "^24.8.0",
 		"metro-react-native-babel-preset": "^0.55.0",
 		"react-native-dotenv": "^0.2.0",
@@ -53,5 +54,11 @@
 	},
 	"jest": {
 		"preset": "react-native"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm test",
+			"pre-push": "npm test"
+		}
 	}
 }
