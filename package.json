@@ -5,7 +5,12 @@
 	"scripts": {
 		"start": "npm run web",
 		"ios": "react-native run-ios",
-		"test": "jest",
+		"test:shared": "jest --config ./__tests__/config/shared.unit.js",
+		"test:web-ui": "jest --config ./__tests__/config/web-ui.unit.js",
+		"test:web": "npm run test:shared && npm run test:web-ui",
+		"test:ios-ui": "jest --config ./__tests__/config/ios-ui.unit.js",
+		"test:ios": "npm run test:shared && npm run test:ios-ui",
+		"test": "npm run test:shared && npm run test:web-ui && npm run test:ios-ui",
 		"lint": "eslint .",
 		"build:web": "HOST=localhost npm run webpack -- --env.mode production",
 		"webpack": "webpack --config web/webpack/webpack.config.js",
@@ -52,9 +57,6 @@
 		"webpack-dashboard": "2.0.0",
 		"webpack-dev-server": "3.3.1",
 		"webpack-merge": "4.1.4"
-	},
-	"jest": {
-		"testRegex": "/src/.*spec\\.jsx?$"
 	},
 	"husky": {
 		"hooks": {
