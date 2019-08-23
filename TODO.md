@@ -19,3 +19,4 @@ Things to checkout
 
 # NOTES
 - Remember to set Dead code stripping off in xcode. This intereferes with a Release build
+- Jest configuration preset clash between react and react-native
