@@ -15,7 +15,7 @@ Things to checkout
 - [x] Environment macros for Swift pre-comipiler in iOS
 - [ ] Pendo spike
 - [x] husky pre commit hooks
-
+- [ ] Recompose
 
 # NOTES
 - Remember to set Dead code stripping off in xcode. This intereferes with a Release build

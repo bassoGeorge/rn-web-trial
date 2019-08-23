@@ -54,10 +54,7 @@
 		"webpack-merge": "4.1.4"
 	},
 	"jest": {
-		"testRegex": "/__tests__/.*spec\\.jsx?$",
-		"setupFilesAfterEnv": [
-			"<rootDir>/__tests__/setupTests.js"
-		]
+		"testRegex": "/src/.*spec\\.jsx?$"
 	},
 	"husky": {
 		"hooks": {
