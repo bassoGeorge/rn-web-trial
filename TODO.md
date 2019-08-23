@@ -7,12 +7,12 @@ Things to checkout
 - [ ] Navigation and routing
 - [ ] Unit testing strategy
 - [ ] E2E
-- [ ] Linter? EsLint configuration and IDE integration
+- [x] Linter? EsLint configuration and IDE integration - Screw it!
 - [ ] Babel config -- Currently react native given default
 - [ ] Flow?
 - [x] Objective-C bridging to Swift in iOS and rewriting the AppDelegate to Swift
 - [x] Environment macros for Swift pre-comipiler in iOS
-- [ ] pendo spike
+- [ ] Pendo spike
 - [ ] husky pre commit hooks
 
 
