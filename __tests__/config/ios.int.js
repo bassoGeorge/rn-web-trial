@@ -1,7 +1,6 @@
-const common = require('./common')
+const iosCommon = require('./common.ios')
 
 module.exports = {
-	...common,
+	...iosCommon,
 	testRegex: "__tests__/integration/.*\\.ios\\.int\\.jsx?$",
-	preset   : "@testing-library/react-native"
 }
