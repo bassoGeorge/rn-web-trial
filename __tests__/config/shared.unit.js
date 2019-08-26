@@ -1,4 +1,4 @@
-const common = require('./common')
+const common = require('./config-utils').common
 
 module.exports = {
 	...common,

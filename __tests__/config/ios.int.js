@@ -1,4 +1,4 @@
-const iosCommon = require('./common.ios')
+const iosCommon = require('./config-utils').iosCommon
 
 module.exports = {
 	...iosCommon,

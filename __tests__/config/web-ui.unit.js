@@ -1,4 +1,4 @@
-const webCommon = require('./common.web')
+const webCommon = require('./config-utils').webCommon
 
 module.exports = {
 	...webCommon,

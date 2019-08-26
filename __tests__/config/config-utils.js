@@ -1,6 +1,10 @@
-const common = require('./common')
+const path   = require('path')
+const common = {
+	// Any common config here for all kinds of jest tests
+	rootDir: path.resolve(__dirname, '../../')
+}
 
-module.exports = {
+const iosCommon = {
 	...common,
 	preset                 : "@testing-library/react-native",
 	transformIgnorePatterns: [
@@ -9,4 +13,18 @@ module.exports = {
 	setupFilesAfterEnv     : [
 		"<rootDir>/__tests__/config/ios.test-setup.js"
 	]
+}
+
+
+const webCommon = {
+	...common,
+	setupFilesAfterEnv: [
+		"<rootDir>/__tests__/config/web.test-setup.js"
+	]
+}
+
+module.exports = {
+	common,
+	iosCommon,
+	webCommon
 }
