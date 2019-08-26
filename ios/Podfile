@@ -28,7 +28,8 @@ target 'nativeWeb2' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-
+  # Other Pods
+  pod 'Insert', '~> 1.52.2.0'
 
   target 'nativeWeb2Tests' do
     inherit! :search_paths

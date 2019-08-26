@@ -12,11 +12,12 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2DCD954D1E0B4F2C00145EB5 /* nativeWeb2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* nativeWeb2Tests.m */; };
-		318C715ABB9B334B59FDCFC2 /* libPods-nativeWeb2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BDF3E501C1371E47B8AD0B7 /* libPods-nativeWeb2.a */; };
+		2E92EFD9843200D18E800A91 /* libPods-nativeWeb2-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B86ABE4E770308577AD50CA /* libPods-nativeWeb2-tvOSTests.a */; };
+		477CCC58108F92D1E5FBFE06 /* libPods-nativeWeb2-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3028CD2C2E050299559836 /* libPods-nativeWeb2-tvOS.a */; };
+		7F7BBB892313AB1600D67666 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BBB882313AB1600D67666 /* Constants.swift */; };
 		7FCE9EA723028F4D00B327B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCE9EA623028F4D00B327B4 /* AppDelegate.swift */; };
-		C88131EED89CBB148BE37E26 /* libPods-nativeWeb2-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24FC083A13D298A311048A58 /* libPods-nativeWeb2-tvOSTests.a */; };
-		CC9F31CD8C5B84A687BE764A /* libPods-nativeWeb2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3463FA72CE26DDA3436680C8 /* libPods-nativeWeb2Tests.a */; };
-		D47D30747E9219FAD83AA67B /* libPods-nativeWeb2-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C132647992B398FCEB6B27 /* libPods-nativeWeb2-tvOS.a */; };
+		871B9F628A135E3C0C0343E4 /* libPods-nativeWeb2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B17F02E33A1261A790804BC /* libPods-nativeWeb2.a */; };
+		C6D2E605118D7AD0768BC0E0 /* libPods-nativeWeb2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B32BB5B9BB2CF8802E20E1CC /* libPods-nativeWeb2Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,21 +42,21 @@
 		00E356EE1AD99517003FC87E /* nativeWeb2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nativeWeb2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* nativeWeb2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nativeWeb2Tests.m; sourceTree = "<group>"; };
-		03C132647992B398FCEB6B27 /* libPods-nativeWeb2-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeWeb2-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* nativeWeb2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nativeWeb2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = nativeWeb2/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = nativeWeb2/Info.plist; sourceTree = "<group>"; };
-		24FC083A13D298A311048A58 /* libPods-nativeWeb2-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeWeb2-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B86ABE4E770308577AD50CA /* libPods-nativeWeb2-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeWeb2-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* nativeWeb2-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nativeWeb2-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* nativeWeb2-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nativeWeb2-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30177A2D122DA94C217BB095 /* Pods-nativeWeb2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeWeb2.release.xcconfig"; path = "Target Support Files/Pods-nativeWeb2/Pods-nativeWeb2.release.xcconfig"; sourceTree = "<group>"; };
-		3463FA72CE26DDA3436680C8 /* libPods-nativeWeb2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeWeb2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFA34EEC4DC25093CBE013E /* Pods-nativeWeb2-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeWeb2-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-nativeWeb2-tvOSTests/Pods-nativeWeb2-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		71756A9ADB0169A72C3E70A7 /* Pods-nativeWeb2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeWeb2.debug.xcconfig"; path = "Target Support Files/Pods-nativeWeb2/Pods-nativeWeb2.debug.xcconfig"; sourceTree = "<group>"; };
-		7BDF3E501C1371E47B8AD0B7 /* libPods-nativeWeb2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeWeb2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B17F02E33A1261A790804BC /* libPods-nativeWeb2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeWeb2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7BBB882313AB1600D67666 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7FCE9EA523028F4C00B327B4 /* nativeWeb2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nativeWeb2-Bridging-Header.h"; sourceTree = "<group>"; };
 		7FCE9EA623028F4D00B327B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B32BB5B9BB2CF8802E20E1CC /* libPods-nativeWeb2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeWeb2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DCDCBC041EAFE17C27E600 /* Pods-nativeWeb2-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeWeb2-tvOS.release.xcconfig"; path = "Target Support Files/Pods-nativeWeb2-tvOS/Pods-nativeWeb2-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		BC0085DC25FFBBE1687DBEC6 /* Pods-nativeWeb2-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeWeb2-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-nativeWeb2-tvOS/Pods-nativeWeb2-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DE4FBF669E15E0E04B300795 /* Pods-nativeWeb2-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeWeb2-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-nativeWeb2-tvOSTests/Pods-nativeWeb2-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F0957CD4145808E677DDAF1F /* Pods-nativeWeb2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeWeb2Tests.debug.xcconfig"; path = "Target Support Files/Pods-nativeWeb2Tests/Pods-nativeWeb2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FBB33992DCAC8922D7474628 /* Pods-nativeWeb2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeWeb2Tests.release.xcconfig"; path = "Target Support Files/Pods-nativeWeb2Tests/Pods-nativeWeb2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FC3028CD2C2E050299559836 /* libPods-nativeWeb2-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeWeb2-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC9F31CD8C5B84A687BE764A /* libPods-nativeWeb2Tests.a in Frameworks */,
+				C6D2E605118D7AD0768BC0E0 /* libPods-nativeWeb2Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				318C715ABB9B334B59FDCFC2 /* libPods-nativeWeb2.a in Frameworks */,
+				871B9F628A135E3C0C0343E4 /* libPods-nativeWeb2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47D30747E9219FAD83AA67B /* libPods-nativeWeb2-tvOS.a in Frameworks */,
+				477CCC58108F92D1E5FBFE06 /* libPods-nativeWeb2-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C88131EED89CBB148BE37E26 /* libPods-nativeWeb2-tvOSTests.a in Frameworks */,
+				2E92EFD9843200D18E800A91 /* libPods-nativeWeb2-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +129,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				7FCE9EA623028F4D00B327B4 /* AppDelegate.swift */,
 				7FCE9EA523028F4C00B327B4 /* nativeWeb2-Bridging-Header.h */,
+				7F7BBB882313AB1600D67666 /* Constants.swift */,
 			);
 			name = nativeWeb2;
 			sourceTree = "<group>";
@@ -136,10 +139,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				7BDF3E501C1371E47B8AD0B7 /* libPods-nativeWeb2.a */,
-				03C132647992B398FCEB6B27 /* libPods-nativeWeb2-tvOS.a */,
-				24FC083A13D298A311048A58 /* libPods-nativeWeb2-tvOSTests.a */,
-				3463FA72CE26DDA3436680C8 /* libPods-nativeWeb2Tests.a */,
+				7B17F02E33A1261A790804BC /* libPods-nativeWeb2.a */,
+				FC3028CD2C2E050299559836 /* libPods-nativeWeb2-tvOS.a */,
+				1B86ABE4E770308577AD50CA /* libPods-nativeWeb2-tvOSTests.a */,
+				B32BB5B9BB2CF8802E20E1CC /* libPods-nativeWeb2Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				C7D0BE26930BCCACAFBD2324 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -451,6 +455,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C7D0BE26930BCCACAFBD2324 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nativeWeb2/Pods-nativeWeb2-frameworks.sh",
+				"${PODS_ROOT}/Insert/InsertFramework.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InsertFramework.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nativeWeb2/Pods-nativeWeb2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DF9207DD67BF1F9A776E7310 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -527,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FCE9EA723028F4D00B327B4 /* AppDelegate.swift in Sources */,
+				7F7BBB892313AB1600D67666 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
