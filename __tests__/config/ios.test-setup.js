@@ -1,3 +1,5 @@
+import {cleanup} from '@testing-library/react-native'
+
 // Some Essential Mocks
 jest.mock('NativeAnimatedHelper').mock('react-native-gesture-handler', () => {
 	const View = require('react-native/Libraries/Components/View/View');
@@ -8,3 +10,5 @@ jest.mock('NativeAnimatedHelper').mock('react-native-gesture-handler', () => {
 		Directions       : {},
 	};
 });
+
+afterEach(cleanup)

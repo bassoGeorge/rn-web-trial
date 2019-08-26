@@ -1,6 +1,6 @@
-const common = require('./common')
+const webCommon = require('./common.web')
 
 module.exports = {
-	...common,
+	...webCommon,
 	testRegex: "__tests__/integration/.*\\.web\\.int\\.jsx?$"
 }
