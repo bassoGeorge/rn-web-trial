@@ -39,6 +39,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCTBridgeDelegate {
     return true
   }
   
+  func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+    return RCTLinkingManager.application(application, continue: userActivity, restorationHandler: restorationHandler)
+  }
+  
   func sourceURL(for bridge: RCTBridge!) -> URL! {
     #if DEBUG
     return RCTBundleURLProvider.sharedSettings()?.jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
