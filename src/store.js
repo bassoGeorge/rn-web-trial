@@ -6,7 +6,7 @@ const baseState = {
 	subTitle: "- powered by React + React Native"
 };
 
-const reducer = (state, action) => {
+export const appReducer = (state, action) => {
 	switch (action.type) {
 		case "TRIAL":
 			return {
@@ -18,4 +18,4 @@ const reducer = (state, action) => {
 	}
 };
 
-export const store = createStore(reducer, baseState);
+export const store = createStore(appReducer, baseState);
