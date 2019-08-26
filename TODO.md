@@ -16,6 +16,7 @@ Things to checkout
 - [ ] Pendo spike
 - [x] husky pre commit hooks
 - [ ] Recompose
+- [ ] iPad?
 
 # NOTES
 - Remember to set Dead code stripping off in xcode. This intereferes with a Release build

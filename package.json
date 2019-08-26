@@ -11,7 +11,10 @@
 		"test:web": "npm run test:shared && npm run test:web-ui",
 		"test:ios-ui": "jest --config ./__tests__/config/ios-ui.unit.js",
 		"test:ios": "npm run test:shared && npm run test:ios-ui",
-		"test": "concurrently \"npm:test:shared\" \"npm:test:web-ui\" \"npm:test:ios-ui\"",
+		"test:unit": "concurrently \"npm:test:shared\" \"npm:test:web-ui\" \"npm:test:ios-ui\"",
+		"test:web:int": "jest --config ./__tests__/config/web.int.js",
+		"test:int": "npm run test:web:int",
+		"test": "npm run test:unit && npm run test:int",
 		"build:web": "HOST=localhost npm run webpack -- --env.mode production",
 		"webpack": "webpack --config web/webpack/webpack.config.js",
 		"webpack-dev-server": "webpack-dev-server --config web/webpack/webpack.config.js"
