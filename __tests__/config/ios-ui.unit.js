@@ -1,6 +1,6 @@
-const iosCommon = require('./config-utils').iosCommon
+const iosCommon = require("./config-utils").iosCommon;
 
 module.exports = {
-	...iosCommon,
-	testRegex: "src/.*\\.ios\\.spec\\.jsx?$",
-}
+  ...iosCommon,
+  testRegex: "src/.*\\.ios\\.spec\\.jsx?$"
+};

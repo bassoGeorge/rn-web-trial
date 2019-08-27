@@ -1,3 +1,1 @@
-it("just works", () => {
-
-})
+it("just works", () => {});

@@ -1,12 +1,15 @@
-import {connect} from 'react-redux'
+import { connect } from "react-redux";
 
 export const mapStateToProps = state => ({
-	title: state.title,
-	subTitle: state.subTitle
+  title: state.title,
+  subTitle: state.subTitle
 });
 
 export const mapDispatchToProps = dispatch => ({
-	onClick: (str) => dispatch({ type: "TRIAL" , payload: str})
+  onClick: str => dispatch({ type: "TRIAL", payload: str })
 });
 
-export const HomeContainerGen = connect(mapStateToProps, mapDispatchToProps);
+export const HomeContainerGen = connect(
+  mapStateToProps,
+  mapDispatchToProps
+);

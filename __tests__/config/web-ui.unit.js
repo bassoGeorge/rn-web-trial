@@ -1,6 +1,6 @@
-const webCommon = require('./config-utils').webCommon
+const webCommon = require("./config-utils").webCommon;
 
 module.exports = {
-	...webCommon,
-	testRegex: "src/.*\\.web\\.spec\\.jsx?$"
-}
+  ...webCommon,
+  testRegex: "src/.*\\.web\\.spec\\.jsx?$"
+};

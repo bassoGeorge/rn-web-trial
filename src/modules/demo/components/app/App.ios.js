@@ -6,60 +6,67 @@
  * @flow
  */
 
-import React, {Fragment} from 'react';
-import {StatusBar} from 'react-native';
-import {createAppContainer, createBottomTabNavigator, createStackNavigator} from 'react-navigation';
-import {Provider} from 'react-redux';
-import {store} from '../../../../store';
-import Home from '../home/Home';
-import ScTrial from '../sc-trial/ScTrial';
-import About from '../about/About.ios';
+import React, { Fragment } from "react";
+import { StatusBar } from "react-native";
+import {
+  createAppContainer,
+  createBottomTabNavigator,
+  createStackNavigator
+} from "react-navigation";
+import { Provider } from "react-redux";
+import { store } from "../../../../store";
+import Home from "../home/Home";
+import ScTrial from "../sc-trial/ScTrial";
+import About from "../about/About.ios";
 
 const App = () => {
-	return (
-		<Fragment>
-			<StatusBar barStyle="dark-content"/>
-			{/*<SafeAreaView>*/}
-			{/*	<ScrollView*/}
-			{/*		contentInsetAdjustmentBehavior="automatic"*/}
-			{/*		style={styles.scrollView}>*/}
+  return (
+    <Fragment>
+      <StatusBar barStyle="dark-content" />
+      {/*<SafeAreaView>*/}
+      {/*	<ScrollView*/}
+      {/*		contentInsetAdjustmentBehavior="automatic"*/}
+      {/*		style={styles.scrollView}>*/}
 
-			<NavigationContainer/>
-			{/*	</ScrollView>*/}
-			{/*</SafeAreaView>*/}
-		</Fragment>
-	);
+      <NavigationContainer />
+      {/*	</ScrollView>*/}
+      {/*</SafeAreaView>*/}
+    </Fragment>
+  );
 };
 
-const HomeNavigationStack = createStackNavigator({
-	Home   : {
-		screen: Home,
-		path  : '',
-	},
-	Details: {
-		screen: ScTrial,
-		path  : '/details',
-	},
-}, {
-	initialRouteName: 'Home',
-});
+const HomeNavigationStack = createStackNavigator(
+  {
+    Home: {
+      screen: Home,
+      path: ""
+    },
+    Details: {
+      screen: ScTrial,
+      path: "/details"
+    }
+  },
+  {
+    initialRouteName: "Home"
+  }
+);
 
 const AboutNavigationStack = createStackNavigator({
-	About: {
-		screen: About,
-		path  : '/about',
-	},
+  About: {
+    screen: About,
+    path: "/about"
+  }
 });
 
 const AppNavigation = createBottomTabNavigator({
-	Home : HomeNavigationStack,
-	About: AboutNavigationStack,
+  Home: HomeNavigationStack,
+  About: AboutNavigationStack
 });
 
 const NavigationContainer = createAppContainer(AppNavigation);
 
 export default () => (
-	<Provider store={store}>
-		<App/>
-	</Provider>
+  <Provider store={store}>
+    <App />
+  </Provider>
 );
