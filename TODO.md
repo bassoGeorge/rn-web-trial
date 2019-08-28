@@ -5,15 +5,15 @@ Things to checkout
 - [x] Directory structure
 - [x] Styles sharing? CSS-in-JS?: styled-components
 - [x] Navigation and routing -- React Navigation for iOS and react-router for web
-- [ ] Unit testing strategy
+- [x] Unit testing strategy
 - [ ] E2E
 - [x] Linter? EsLint configuration and IDE integration - Screw it!
-- [ ] Auto-formatter ... maybe required
-- [ ] Babel config -- Currently react native given default
+- [x] Auto-formatter ... maybe required - Prettier
+- [x] Babel config -- Currently react native given default - With a little adjustment, just works
 - [x] Flow? -- Naaaa
 - [x] Objective-C bridging to Swift in iOS and rewriting the AppDelegate to Swift
 - [x] Environment macros for Swift pre-comipiler in iOS
-- [ ] Pendo spike
+- [x] Pendo spike
 - [x] husky pre commit hooks
 - [ ] Recompose
 - [ ] iPad?
