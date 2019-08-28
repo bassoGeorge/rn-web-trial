@@ -18,7 +18,6 @@ npm start
 ### React Native development
 
 #### 1. JDK and Watchman
-
 ```shell script
 brew install watchman
 ```
@@ -31,22 +30,18 @@ brew cask install adoptopenjdk8
 ```
 
 #### 2. React Native CLI
-
 ```shell script
 npm install -g react-native-cli
 ```
 
 #### 3. Install XCode
-
 XCode can be installed from the App store
 
 ##### Command Line Tools
-
 You will also need to install the command line tools.
 XCode Preferences (⌘,) > Locations > Command Line Tools dropdown. Select the latest command line tools to install them
 
 #### 4. Cocoa Pods
-
 This app uses cocoa pods to manage dependencies on ios side.
 
 ```shell script
@@ -64,7 +59,6 @@ When dependencies are changed for ios, subsequent builds might fail with some er
 run `pod install` in the `ios/` again and retry
 
 #### 5. Running in simulator
-
 ```shell script
 npm install
 npm run ios

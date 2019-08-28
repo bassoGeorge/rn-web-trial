@@ -19,6 +19,7 @@
     "build:web": "HOST=localhost npm run webpack -- --env.mode production",
     "webpack": "webpack --config web/webpack/webpack.config.js",
     "webpack-dev-server": "webpack-dev-server --config web/webpack/webpack.config.js",
+    "format-staged-code": "pretty-quick --pattern \"**/*.*(js|jsx)\" --staged",
     "prettier": "prettier",
     "pretty-quick": "pretty-quick"
   },
@@ -70,7 +71,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run pretty-quick --staged && npm test",
+      "pre-commit": "npm run format-staged-code && npm test",
       "pre-push": "npm test"
     }
   }
