@@ -10,6 +10,20 @@ import Foundation
 
 struct Constants {
   
+  struct API {
+    #if DEBUG
+      static let host = "http://localhost:3000"
+    #elseif DEV
+      static let host = "http://www.dev_host:8000"
+    #elseif QA
+      static let host = "http://www.qa_host:8000"
+    #elseif PERF
+      static let host = "http://www.perf_host:8000"
+    #else
+      static let host = "http://www.prod_host:8000"
+    #endif
+  }
+  
   struct PendoConfig {
     static let skdKey = "e6c37ea76886679bfa19452ddcef7a3641f8717193c6a6d1ddb36c94eddebe853ccf4a04e147f60b0ce3ecf6711d17f7c93161daa9bb3abe26528b3fb8a74bcf57f3d2bec4f6ba14d764dfa7dca3935e.d9ab53d26b0498e05a0f8a21951e21a1.4c739820f8d8db5905788088b1547cb1d11aecc386957d780cc64e255d14e090"
     static let companyID = "mckinseycompany"

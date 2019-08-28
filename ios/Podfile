@@ -31,20 +31,5 @@ target 'nativeWeb2' do
   # Other Pods
   pod 'Insert', '~> 1.52.2.0'
 
-  target 'nativeWeb2Tests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
   use_native_modules!
-end
-
-target 'nativeWeb2-tvOS' do
-  # Pods for nativeWeb2-tvOS
-
-  target 'nativeWeb2-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end
